@@ -1,0 +1,75 @@
+#prodAll{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+#prodAll img{
+  width: 500px;
+  height: 500px;
+}
+
+.prod{
+  text-align: center;
+  font-family: "Ovo", serif;
+  font-size: 35px;
+  width: 30%;
+}
+
+
+#reviewAll{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+#reviewAll img{
+  width: 50px;
+  height: 50px;
+}
+.review{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-left: -20px;
+  margin-top: -50px;
+  font-size: 20px;
+  color: rgb(145, 145, 145);
+}
+
+#info{
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 150px;
+  font-size: 25px;
+  color:rgb(145, 145, 145);
+  font-family: "Ovo", serif;
+}
+#buttons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.button{
+  font-size: 25px;
+  margin: 15px;
+  padding: 10px 24px;
+  text-decoration: none;
+}
+.button1{
+  font-family: "Ovo", serif;
+  font-weight: bolder;
+  color: white;
+  background-color: black;
+  border: 5px solid black;
+}
+
+.button2{
+  font-family: "Ovo", serif;
+  font-weight: bolder;
+  color: black;
+  border: 5px solid black;
+}
+
+
