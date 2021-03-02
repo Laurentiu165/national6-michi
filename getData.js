@@ -1,4 +1,5 @@
 console.log("Course-13-Ajax");
+console.log("Crud operation-READ");
 
 const articleListHtml = document.querySelector(".article-list");
 
