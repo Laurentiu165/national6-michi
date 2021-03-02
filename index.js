@@ -10,12 +10,12 @@ document.getElementById("get-data").addEventListener("click", function(){
 function handleFetchResponse(response){
   console.log("response",response);
   return response.json();
-}
+};
 
 function useJSONResponse(json){
   console.log(json);
   renderArticles(json);
-}
+};
 
 function renderArticles(articleList){
   articleListHtml.innerText = "";
@@ -24,7 +24,7 @@ function renderArticles(articleList){
     renderArticle(articleData);
   }
 
-}
+};
 
 
 function renderArticle(articleData){
@@ -41,4 +41,4 @@ function renderArticle(articleData){
   articleContent.innerText = articleData.content;
 
 
-}
+};
