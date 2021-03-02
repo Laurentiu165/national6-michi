@@ -1,7 +1,8 @@
-console.log("JS - Digital Clock");
+console.log("JavaScript - Async Programming - Homework");
 
 let seconds = 0;
 const secondsParagraphs = document.querySelectorAll(".seconds p");
+console.log(secondsParagraphs);
 
 let minutes = 0;
 const minutesParagraphs = document.querySelectorAll(".minutes p");
@@ -9,28 +10,55 @@ const minutesParagraphs = document.querySelectorAll(".minutes p");
 let hours = 0;
 const hoursParagraphs = document.querySelectorAll(".hours p");
 
-setInterval(function(){
 
-  renderDigits(seconds, secondsParagraphs);
-  renderDigits(minutes, minutesParagraphs);
-  renderDigits(hours,hoursParagraphs)
+let timer;
+
+document.getElementById("timer-start").addEventListener("click", function(){
+  timer = setInterval(function(){
+    renderDigits(seconds, secondsParagraphs);
+    renderDigits(minutes, minutesParagraphs);
+    renderDigits(hours,hoursParagraphs)
+    
+    seconds++;
+    
+    if(seconds === 60){
+      seconds = 0;
+      minutes++;
+    }
+    
+    if(minutes === 60){
+      minutes = 0;
+      hours++;
+    }
+    if(hours === 24){
+      hours = 0;
+    }
   
-  seconds++;
+  }, 100)
+});
 
-  if(seconds === 60){
-    seconds = 0;
-    minutes++;
-  }
+
+document.getElementById("timer-stop").addEventListener("click", function(){
+  clearInterval(timer);
+});
+
+document.getElementById("timer-reset").addEventListener("click", function(){
+  secondsParagraphs[0].innerText = 0;
+  secondsParagraphs[1].innerText = 0;
   
-  if(minutes === 60){
-    minutes = 0;
-    hours++;
-  }
-  if(hours === 24){
-    hours = 0;
-  }
+  minutesParagraphs[0].innerText = 0;
+  minutesParagraphs[1].innerText = 0;
 
-}, 1);
+  hoursParagraphs[0].innerText = 0;
+  hoursParagraphs[1].innerText = 0;
+  clearInterval(timer);  
+});
+
+document.getElementById("timer-save").addEventListener("click",function(){
+
+
+});
+
 
 function renderDigits(nr, pList){
   const stringDigits = nr + "";
@@ -42,8 +70,8 @@ function renderDigits(nr, pList){
     pList[0].innerText = 0;
     pList[1].innerText = digitList[0];
   }
-
-
-
 }
+
+
+
 
