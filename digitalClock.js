@@ -1,8 +1,9 @@
 console.log("JavaScript - Async Programming - Homework");
 
+let divSaver = document.querySelector(".save-time-paragraphs");
+
 let seconds = 0;
 const secondsParagraphs = document.querySelectorAll(".seconds p");
-console.log(secondsParagraphs);
 
 let minutes = 0;
 const minutesParagraphs = document.querySelectorAll(".minutes p");
@@ -34,7 +35,7 @@ document.getElementById("timer-start").addEventListener("click", function(){
       hours = 0;
     }
   
-  }, 100)
+  }, 10)
 });
 
 
@@ -54,8 +55,11 @@ document.getElementById("timer-reset").addEventListener("click", function(){
   clearInterval(timer);  
 });
 
-document.getElementById("timer-save").addEventListener("click",function(){
+document.getElementById("timer-save").addEventListener("click", function(){
 
+  let newPara = document.createElement("p");
+  divSaver.appendChild(newPara);
+  newPara.innerText = "The time is:" + `${hours}:${minutes}:${seconds}`
 
 });
 
