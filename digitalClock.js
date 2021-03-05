@@ -44,6 +44,9 @@ document.getElementById("timer-stop").addEventListener("click", function(){
 });
 
 document.getElementById("timer-reset").addEventListener("click", function(){
+  seconds = 0;
+  minutes = 0;
+  hours = 0;
   secondsParagraphs[0].innerText = 0;
   secondsParagraphs[1].innerText = 0;
   
