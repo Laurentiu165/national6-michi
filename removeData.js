@@ -1,1 +1,2 @@
-console.log("CRUD--Remove Data!");
+console.log("CRUD--Delete Data!");
+
