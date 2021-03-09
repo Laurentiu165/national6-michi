@@ -1,5 +1,7 @@
 console.log("Crud operation-CREATE");
 
+
+
 document.getElementById("add-article-button").addEventListener("click", function(){
 
   const articleTitle = document.getElementById("article-title").value;
