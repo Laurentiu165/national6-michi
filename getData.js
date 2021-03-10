@@ -39,4 +39,13 @@ function renderArticle(articleData){
 
   articleTitle.innerText = articleData.title;
   articleContent.innerText = articleData.content;
+
+  fetch("https://simple-json-server-scit.herokuapp.com/comments?postId=" + articleData.id).then(handleFetchResponse).then(useJSONResponse);
+
+  function renderComments(articleCommentsList){
+    for(articleComments of articleCommentsList) {
+     console.log(articleComments); 
+     renderComment(articleComments);
+    }
+  }
 };
