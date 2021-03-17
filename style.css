@@ -1,0 +1,14 @@
+.header{
+  display: flex;
+  background-color: lightskyblue;
+}
+
+#checkList-img{
+  height: 40px;
+}
+
+
+#add-task-img{
+  height: 35px;
+  cursor: pointer;
+}
