@@ -1,14 +1,30 @@
+body{
+  margin: 0px;
+}
+
 .header{
   display: flex;
   background-color: lightskyblue;
+  align-items: center;
+  
+}
+.header h1{
+  margin-left: 10px;
 }
 
 #checkList-img{
   height: 40px;
+  margin-left: 10px;
 }
 
+.content{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
 
 #add-task-img{
-  height: 35px;
+  height: 25px;
   cursor: pointer;
+  margin-left: 10px;
 }
