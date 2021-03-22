@@ -1,19 +1,25 @@
-body{
-  margin: 0px;
+body {
+  margin: 0;
 }
 
-.header{
+#header {
   display: flex;
   background-color: lightskyblue;
   align-items: center;
-  
-}
-.header h1{
-  margin-left: 10px;
 }
 
 #checkList-img{
   height: 40px;
+  margin-left: 10px;
+}
+
+#header h1{
+  margin-left: 10px;
+}
+
+#add-task-img{
+  height: 25px;
+  cursor: pointer;
   margin-left: 10px;
 }
 
@@ -23,8 +29,18 @@ body{
   align-items: center;
 }
 
-#add-task-img{
+.delete-task-img{
   height: 25px;
-  cursor: pointer;
   margin-left: 10px;
+  cursor: pointer;
 }
+
+.all-task-content{
+  display: flex;
+  align-items: center;
+}
+
+.all-task-content input{
+  cursor: pointer;
+}
+
