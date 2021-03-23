@@ -1,0 +1,2 @@
+console.log("Spaceship generator");
+
