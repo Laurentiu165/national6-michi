@@ -1,0 +1,11 @@
+#spaceship{
+  display: block;
+  cursor: pointer;
+}
+
+.spaceship-generated{
+  display: block;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
