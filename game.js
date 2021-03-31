@@ -118,8 +118,6 @@ function collisionDetection(player, obstacles){
   }
   return false;
 }
-
-let heartImg = "heart.png"
 class Lives{
   constructor(){
     this.generateLives()
@@ -127,7 +125,7 @@ class Lives{
   generateLives(){
     for(let i = 0; i < 3; i++){
       this.ref = document.createElement("img");
-      this.ref.src = heartImg;
+      this.ref.src = "heart.png";
       this.ref.classList.add("heart-lives");
       document.body.appendChild(this.ref);
     }
