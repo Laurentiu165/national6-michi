@@ -119,8 +119,30 @@ function collisionDetection(player, obstacles){
   return false;
 }
 
+let heartImg = "heart.png"
+class Lives{
+  constructor(){
+    this.generateLives()
+  }
+  generateLives(){
+    for(let i = 0; i < 3; i++){
+      this.ref = document.createElement("img");
+      this.ref.src = heartImg;
+      this.ref.classList.add("heart-lives");
+      document.body.appendChild(this.ref);
+    }
+  }
+
+  removeLives(){
+   this.ref.remove();
+  
+  }
+}
+
 const player = new Player();
 const obstacleFactory = new ObstacleFactory();
+const lives = new Lives();
+
 
 let count = 0;
 
@@ -129,10 +151,9 @@ let gameLoop = setInterval(() =>{
   if(keyDownPress) player.moveDown();
   if(count % 20 === 0) obstacleFactory.createObstacle();
   obstacleFactory.moveObstacles();
+
   if (collisionDetection(player, obstacleFactory.obstacles)){
-     clearInterval(gameLoop);
-    alert("You hit an obstacle");
-    window.location = "/";
+     lives.removeLives();
   } 
 
   obstacleFactory.destroyObstacle();
