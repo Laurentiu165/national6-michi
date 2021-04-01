@@ -118,6 +118,8 @@ function collisionDetection(player, obstacles){
   }
   return false;
 }
+
+const imgArray = [];
 class Lives{
   constructor(){
     this.generateLives()
@@ -125,14 +127,15 @@ class Lives{
   generateLives(){
     for(let i = 0; i < 3; i++){
       this.ref = document.createElement("img");
-      this.ref.src = "heart.png";
+      this.ref.src = "heart.png"
       this.ref.classList.add("heart-lives");
+      imgArray.push(this.ref)
       document.body.appendChild(this.ref);
     }
   }
 
   removeLives(){
-   this.ref.remove();
+  imgArray.pop().remove()
   
   }
 }
@@ -148,12 +151,20 @@ let gameLoop = setInterval(() =>{
   if(keyUpPress) player.moveUp();
   if(keyDownPress) player.moveDown();
   if(count % 20 === 0) obstacleFactory.createObstacle();
-  obstacleFactory.moveObstacles();
-
+  
   if (collisionDetection(player, obstacleFactory.obstacles)){
-     lives.removeLives();
+    lives.removeLives();
   } 
-
+  obstacleFactory.moveObstacles();
+  
+  if(imgArray.length === 0){
+    clearInterval(gameLoop);
+    alert("Out of lives. You lost!")
+    window.location = "/"
+  }
+  
   obstacleFactory.destroyObstacle();
   count++;
 },50)
+
+
