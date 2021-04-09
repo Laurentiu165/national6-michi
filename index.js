@@ -20,6 +20,7 @@ function getData() {
 
 function useJSONResponse(json) {
   let allBreedName = Object.values(json);
+  console.log(allBreedName[0]);
   let allBreedNameArray = Object.keys(allBreedName[0]);
   console.log(allBreedNameArray);
   renderBreeds(allBreedNameArray);
@@ -36,6 +37,14 @@ function renderBreed(breedName) {
   breedParagraph.style.cursor = "pointer";
   breeds.appendChild(breedParagraph);
   breedParagraph.innerText = breedName;
+
+  breedParagraph.addEventListener("click", () => {
+    console.log("i clicked on: ", breedParagraph.innerText);
+    fetch(`https://dog.ceo/api/breed/${breedParagraph.innerText}/images`)
+      .then((r) => r.json)
+      .then(useJSONResponseImage);
+  });
+  function useJSONResponseImage(json) {}
 }
 
 getData();
