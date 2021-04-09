@@ -11,26 +11,31 @@ document.getElementById("logout").addEventListener("click", () => {
 });
 
 let breeds = document.getElementById("breeds");
+
 function getData() {
   fetch("https://dog.ceo/api/breeds/list/all")
-    .then(handleFetchResponse)
+    .then((r) => r.json())
     .then(useJSONResponse);
 }
 
-function handleFetchResponse(response) {
-  console.log("response", response);
-  return response.json();
-}
-
 function useJSONResponse(json) {
-  console.log(json);
-  renderArticles(json);
+  let allBreedName = Object.values(json);
+  let allBreedNameArray = Object.keys(allBreedName[0]);
+  console.log(allBreedNameArray);
+  renderBreeds(allBreedNameArray);
 }
 
-function renderArticles(articleList) {
-  for (const articleData of articleList) {
-    console.log(articleData);
-    renderArticle(articleData);
+function renderBreeds(breedList) {
+  for (const breedData of breedList) {
+    renderBreed(breedData);
   }
 }
+
+function renderBreed(breedName) {
+  const breedParagraph = document.createElement("p");
+  breedParagraph.style.cursor = "pointer";
+  breeds.appendChild(breedParagraph);
+  breedParagraph.innerText = breedName;
+}
+
 getData();
