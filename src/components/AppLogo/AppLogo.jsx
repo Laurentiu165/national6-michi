@@ -1,4 +1,4 @@
-import toDoSvg from "./to-do-list.svg"
+import toDoSvg from "./checklists.svg"
 import "./AppLogo.css"
 
 export function AppLogo(){
