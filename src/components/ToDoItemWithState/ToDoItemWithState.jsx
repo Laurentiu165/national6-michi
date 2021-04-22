@@ -6,7 +6,7 @@ export class ToDoItemWithState extends Component {
   };
   handleIncreaseClicks = ()=>{
     console.log("click on item");
-    this.setState({nrOfClicks: 1 })
+    this.setState({nrOfClicks: this.state.nrOfClicks + 1 });
   }
 
   render(){
@@ -17,6 +17,6 @@ export class ToDoItemWithState extends Component {
         <img src="https://www.flaticon.com/svg/vstatic/svg/3221/3221897.svg?token=exp=1619107201~hmac=6781a839dc8c615ca1c540c2d51c3443" alt="trash-can"/>
         <p>{this.state.nrOfClicks}</p>
       </div>
-    )
+    );
   }
 }
