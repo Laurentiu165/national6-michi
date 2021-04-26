@@ -22,3 +22,7 @@
   height: 300px;
   padding: 5px;
 }
+
+.contact-form-field--empty {
+  border: 1px solid red;
+}
