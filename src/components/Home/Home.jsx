@@ -1,7 +1,11 @@
 import "./Home.css"
 
-export function Home(){
+import facebook from "./facebook.svg"
+import github from "./github.svg"
+import linkedin from "./linkedin.svg"
 
+
+export function Home(){
 return <section className="home">
 <div className="max-width">
   <div className="animated-title">
@@ -17,12 +21,12 @@ return <section className="home">
   </div>
   <div className="icons">
     <a href="https://www.facebook.com/laurentiu.michi" target="_blank">
-      <img src="Pictures/facebook.svg" alt=""/>
+      <img src={facebook} alt=""/>
     </a>
     <a href="https://github.com/Laurentiu165/" target="_blank">
-      <img src="Pictures/github.svg" alt=""/>
+      <img src={github} alt=""/>
     </a>
-    <img src="Pictures/linkedin.svg" alt=""/>
+    <img src={linkedin} alt=""/>
   </div>
 </div>
 </section>

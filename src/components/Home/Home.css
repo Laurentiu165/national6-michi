@@ -3,7 +3,7 @@
   position: relative;
   align-items: center;
   height: 500px;
-  background-image: url(pictures/s2.jpg);
+  background-image: url(/src/components/Home/s2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
