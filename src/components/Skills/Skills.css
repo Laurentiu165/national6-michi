@@ -1,16 +1,22 @@
-.about-title {
+.skills {
+  background-image: url(/src/components/Skills/photos/background-grey.jpg);
+  height: 45vw;
+}
+.skills-title {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 5px;
+  margin-top: 100px;
 }
-.about-title {
+
+.skills-title {
   font-family: "CoreCircus", sans-serif;
   font-size: 5vw;
-  color: #2d2d2d;
+  color: rgb(231, 231, 231);
   letter-spacing: 0.5rem;
 }
-.about-title:before {
+
+.skills-title:before {
   content: attr(data-heading);
   position: absolute;
   overflow: hidden;
@@ -20,6 +26,7 @@
   text-align: center;
   -webkit-animation: flicker 3s linear infinite;
   animation: flicker 3s linear infinite;
+  margin-left: -65px;
 }
 
 @-webkit-keyframes flicker {
@@ -98,18 +105,12 @@
       format("truetype");
 }
 
-.about-text-title {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 50px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
+.skills-first-row img {
+  height: 100px;
+  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.about-content {
-  text-align: center;
-  font-size: 20px;
-  font-family: serif;
-  margin-top: 10px;
-  line-height: 32px;
+.skills-second-row img {
+  height: 100px;
 }
