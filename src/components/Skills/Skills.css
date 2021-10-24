@@ -104,13 +104,38 @@
     url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf")
       format("truetype");
 }
+.skills-first-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
 
 .skills-first-row img {
   height: 100px;
+}
+
+.skills-second-row {
+  display: flex;
   justify-content: space-between;
-  justify-content: space-around;
+  padding: 3%;
 }
 
 .skills-second-row img {
   height: 100px;
+  margin-top: 150px;
+}
+
+.skills-content {
+  font-size: 45px;
+  text-align: center;
+}
+
+.skills-content p {
+  background-image: url(https://media3.giphy.com/media/l2QE2buzULWxfb9qo/giphy.gif?cid=ecf05e479125n7emvoxxe50a7ehbe3h8csuotbqcwpdo9uak&rid=giphy.gif&ct=g);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 50px;
 }

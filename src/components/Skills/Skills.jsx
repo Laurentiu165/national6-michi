@@ -10,18 +10,34 @@ export function Skills(){
     <div className="skills-title" data-heading="I">
       SKILLS
     </div>
-    <div className="skills-content">
-      <div className="skills-first-row">
-        <img  src= {html} alt="" />
-        <img src= {css} alt="" />
-        <img src= {javascript} alt="" />
+    <div className="skills-first-row">
+      <div className="skills-content">
+        <img src={html} alt="" />
+        <p>Advanced Level</p>
       </div>
-      <div className="skills-second-row">
-        <img src= {react} alt="" />
-        <img src={github} alt="" />
-        <img src={photoshop} alt="" />
+      <div className="skills-content">
+        <img src={css} alt="" />
+        <p>Mid Level</p>
+      </div>
+      <div className="skills-content">
+        <img src={javascript} alt="" />
+        <p>Advanced Level</p>
       </div>
     </div>
-
+    <div className="skills-second-row">
+      <div className="skills-content">
+        <img src={react} alt="" />
+        <p>Beginner Level</p>
+      </div>
+      <div className="skills-content">
+        <img src={github} alt="" />
+        <p>Advanced Level</p>
+      </div>
+      <div className="skills-content">
+        <img src={photoshop} alt="" />
+        <p>Advanced Level</p>
+      </div>
+    </div>
+  
   </section>
 }
