@@ -2,10 +2,6 @@
 import "./Header.css"
 
 export function Header(){
-  const navigation = document.getElementsByClassName("navbar")
-  if(window.scrollY > 20){
-    navigation.classList.add("sticky")
-  } 
   return <div className="app-header">
     <nav className="navbar">
     <div className="max-width">
