@@ -16,6 +16,9 @@
   padding: 30px 0;
   transition: all 0.3s ease;
 }
+.sticky {
+  background: #39cccc;
+}
 
 .navbar .menu li {
   list-style: none;
