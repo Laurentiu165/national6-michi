@@ -1,11 +1,11 @@
-footer {
+.footer {
   background: #111;
   padding: 20px 23px;
   color: #fff;
 }
-footer span a {
+.footer span a {
   color: #187eb1;
 }
-footer span a:hover {
+.footer span a:hover {
   text-decoration: underline;
 }

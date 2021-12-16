@@ -31,15 +31,29 @@ export function Contact(){
           </div>
         </div>
      </div>
-     <div className="column-right">
-       <div className="name-input">
-         <input type="text" placeholder="Name" required/>
-       </div>
-
-     </div>
-     
-
-   </section>
+     <div className="column right">
+      <form action="#">
+        <div className="fields">
+          <div className="field name">
+            <input type="text" placeholder="Name" required/>
+          </div>
+          <div className="field email">
+            <input type="email" placeholder="email" required/>
+          </div>
+        </div>
+        <div className="field">
+          <input type="text" placeholder="Subject" required/>
+        </div>
+        <div className="field textarea">
+          <textarea  cols="30" rows="10" placeholder="Describe project.." required></textarea>
+          <div className="button">
+            <button type="submit">Send message</button>
+          </div>
+        </div>
+                       
+      </form>
+    </div>
+  </section>
    
   
 }
