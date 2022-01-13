@@ -5,8 +5,9 @@ import javascript from "./photos/js.png"
 import react from "./photos/react.png"
 import github from "./photos/github.jpg"
 import photoshop from "./photos/photoshop.png"
+
 export function Skills(){
-  return <section className="skills">
+  return <section id="section-skills">
     <div className="skills-title" data-heading="I">
       SKILLS
     </div>

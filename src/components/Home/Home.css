@@ -1,8 +1,8 @@
-.home {
+#section-home {
   flex-wrap: wrap;
   position: relative;
   align-items: center;
-  height: 500px;
+  height: 50vw;
   background-image: url(/src/components/Home/s2.jpg);
   background-repeat: no-repeat;
   background-size: cover;

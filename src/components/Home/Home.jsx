@@ -6,7 +6,7 @@ import linkedin from "./linkedin.svg"
 
 
 export function Home(){
-return <section className="home">
+return <section id="section-home">
 <div className="max-width">
   <div className="animated-title">
     <div className="text-top">

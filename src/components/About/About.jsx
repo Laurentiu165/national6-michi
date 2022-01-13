@@ -1,7 +1,7 @@
 import "./About.css"
 
 export function About(){
-  return <section className="about">
+  return <section id="section-about">
   <div className="about-title" data-heading="O">
     ABOUT
   </div>
