@@ -1,5 +1,5 @@
-#section-projects {
-  height: 50vw;
+.section-projects {
+  height: 45vw;
 }
 .projects-title {
   display: flex;

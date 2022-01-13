@@ -1,4 +1,4 @@
-#section-skills {
+.section-skills {
   background-image: url(/src/components/Skills/photos/background-grey.jpg);
   height: 50vw;
 }
@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .skills-title {

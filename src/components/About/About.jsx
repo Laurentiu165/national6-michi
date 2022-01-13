@@ -1,7 +1,8 @@
 import "./About.css"
 
 export function About(){
-  return <section id="section-about">
+  return <section className="section-about">
+    <br id="section-about" /><br />
   <div className="about-title" data-heading="O">
     ABOUT
   </div>
@@ -25,4 +26,5 @@ export function About(){
       </div>
     </div>
 </section>
+
 }

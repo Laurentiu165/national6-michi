@@ -7,7 +7,8 @@ import github from "./photos/github.jpg"
 import photoshop from "./photos/photoshop.png"
 
 export function Skills(){
-  return <section id="section-skills">
+  return <section className="section-skills">
+    <br id="section-skills" />
     <div className="skills-title" data-heading="I">
       SKILLS
     </div>
