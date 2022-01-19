@@ -1,5 +1,5 @@
 #section-contact {
-  background-image: url(/src/components/Contact/photos/background-grey.jpg);
+  background-color: #0c0c0c;
   height: 40vw;
 }
 
@@ -106,78 +106,64 @@
       format("truetype");
 }
 
-.name-container,
-.address-container,
-.email-container,
-.phone-container {
-  align-items: center;
-  justify-content: start;
-  margin: 0px 0px 40px 15px;
-  padding: 15px;
-}
-
-.h1-p-container h1 {
-  color: #fff;
-  font-size: 20px;
-}
-
-.h1-p-container p {
-  color: #fff;
-  font-size: 17px;
-}
-#section-contact .right form .fields {
+.firstRow {
   display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
-#section-contact .right form .field,
-#section-contact .right form .fields .field {
-  height: 45px;
-  width: 50%;
-  margin-bottom: 15px;
+.firstRow img {
+  height: 70px;
+  width: 70px;
 }
 
-#section-contact .right form .textarea {
-  height: 80px;
+.contentContact {
+  text-align: center;
+  width: 15%;
+  color: white;
 }
 
-#section-contact .right form .name {
-  margin-right: 10px;
-}
-#section-contact .right form .email {
-  margin-right: 10px;
+.secondRow {
+  display: flex;
+  justify-content: center;
+  margin-left: -65px;
 }
 
-#section-contact .right form .field input,
-#section-contact .right form .textarea textarea {
-  height: 100%;
+.form-group {
+  margin-bottom: 1rem;
+}
+
+textarea.formControl {
+  height: inherit;
+}
+
+.formControl {
+  width: 150%;
+  height: calc(1.5em + 0.75rem + 2px);
+  border: none;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 5px;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+input,
+select,
+textarea {
+  color: white;
+}
+
+textarea:focus,
+input:focus {
+  color: white;
+}
+
+.button {
   width: 100%;
-  border: 1px solid lightgray;
-  border-radius: 6px;
-  outline: none;
-  padding: 0 15px;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-}
-#section-contact .right form .textarea textarea {
-  padding-top: 10px;
-  resize: none;
-}
-#section-contact .right form .button {
-  height: 47px;
-  width: 170px;
-}
-
-#section-contact .right form .button button {
-  width: 100%;
-  height: 100%;
-  border: 2px solid #187eb1;
-  background: #187eb1;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  transition: ease 0.3s all;
-}
-#section-contact .right form .button button:hover {
-  color: #ffcc00;
-  background: none;
+  background: #ffcc00;
+  border-color: #ffcc00;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px 16px;
 }
