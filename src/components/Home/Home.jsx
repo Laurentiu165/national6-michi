@@ -26,7 +26,10 @@ return <section id="section-home">
     <a href="https://github.com/Laurentiu165/" target="_blank">
       <img src={github} alt=""/>
     </a>
-    <img src={linkedin} alt=""/>
+    <a href="https://www.linkedin.com/in/laurentiu-michi-6286731b7/" target="_blank">
+      <img src={linkedin} alt=""/>
+
+    </a>
   </div>
 </div>
 </section>
