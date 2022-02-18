@@ -51,7 +51,6 @@ export function Contact(){
               <textarea name="" id="" cols="30" rows="8" className="textArea" className="formControl" placeholder="Message" required></textarea>
             </div>
             <div className="form-group">
-              {/* <input type="submit" value={"Send Message"} className="button" /> */}
               <button type="submit" className="button">Send Message</button>
             </div>
 
